@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"  >
+    <test verbose="2" preserve-order="true"
+          name="chrome" parallel="methods">
+
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="org.selenium.test.MyFirstTest"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" parallel="methods"
+          name="firefox">
+
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="org.selenium.test.MyFirstTest"/>
+
+        </classes>
+    </test>
+
+</suite>
